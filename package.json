@@ -1,0 +1,41 @@
+{
+  "name": "jupyter-quest",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "autosuggest-highlight": "3.1.1",
+    "classnames": "^2.2.5",
+    "downshift": "1.25.0",
+    "firebase": "4.9.0",
+    "material-ui": "1.0.0-beta.26",
+    "material-ui-icons": "latest",
+    "react": "^16.2.0",
+    "react-autosuggest": "9.3.2",
+    "react-dom": "^16.2.0",
+    "react-dropzone": "^4.2.7",
+    "react-google-button": "0.4.0",
+    "react-redux": "5.0.6",
+    "react-redux-firebase": "2.0.1",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.0",
+    "redux": "3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.6.1",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}

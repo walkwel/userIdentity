@@ -1,0 +1,38 @@
+.app-sidebar > span{
+  display: block !important;
+}
+
+@media (max-width: 1919.95px){
+  .app-sidebar > span{
+    display: block !important;
+  }
+}
+@media (max-width: 1023.95px){
+  .app-sidebar > span{
+    display: none !important;
+  }
+}
+.linkStyle{
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5em;
+  text-decoration: none
+}
+.cancelBtn{
+margin-left: 8px
+}
+.marginTop{
+  margin-top:10px !important;
+}
+.error-text{
+  color: rgb(223, 30, 39) !important;
+}
+
+.comp-height{
+  max-height: 300px;
+  overflow-y: scroll;
+  width:  250px
+}
+
