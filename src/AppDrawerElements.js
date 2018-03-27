@@ -31,64 +31,15 @@ const styles = theme => ({
 
   render(){
     return(
-  <div>
-    <Divider />
-    <List>
-    <Link className="linkStyle" to="/">
-      <ListItem button>
-        <ListItemIcon>
-          <StarIcon />
-        </ListItemIcon>
-        <ListItemText primary="Home" />
-      </ListItem>
-      </Link>
-       <Link className="linkStyle" to="/courses">
-        <ListItem button>
-          <ListItemIcon>
-          <StarIcon />
-          </ListItemIcon>
-          <ListItemText primary="Courses" />
-        </ListItem>
-        </Link>
-        <Link className="linkStyle" to="/path">
-        <ListItem button>
-        <ListItemIcon>
-        <StarIcon />
-        </ListItemIcon>
-        <ListItemText primary="Paths" />
-      </ListItem>
-      </Link>
-    </List>
-    <Divider />
-    <List>
-      <ListItem button>
-        <ListItemIcon>
-          <StarIcon />
-        </ListItemIcon>
-        <ListItemText primary="Profile" />
-      </ListItem>
-      <ListItem button>
-        <ListItemIcon>
-          <StarIcon />
-        </ListItemIcon>
-        <ListItemText primary="About" />
-      </ListItem>
-      
-    </List>
-  </div>
+  null
 )
   }
 }
 
-
-function btn_logout() {
-  console.log("CLICK!")
-}
-
 const AppBarMenuItems = ({ onClick, logout }) => (
   <div>
-    <MenuItem onClick={() => { onClick(); btn_logout(); }}>My account</MenuItem>
-    <MenuItem onClick={() => { logout(); btn_logout(); }}>Logout</MenuItem>
+    <MenuItem onClick={() => { onClick();}}>My account</MenuItem>
+    <MenuItem onClick={() => { logout(); }}>Logout</MenuItem>
   </div>
 )
 

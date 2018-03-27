@@ -4,7 +4,7 @@ import Paper from 'material-ui/Paper';
 import Grid from 'material-ui/Grid';
 import Button from 'material-ui/Button';
 
-import { firebaseConnect, isEmpty } from 'react-redux-firebase'
+import { firebaseConnect, isEmpty, isLoaded } from 'react-redux-firebase'
 import { compose } from 'redux'
 import { connect } from 'react-redux'
 
@@ -34,9 +34,10 @@ class User extends Component {
         console.log(userRole);
         return (
                 <div className={classes.root}>
-                {userRole ? 
-                    <h2> Welcome {userRole}</h2> :
-                    <Grid container spacing={24}>
+                {!isLoaded(userRole) ? <h5> Loading </h5> 
+                : isEmpty(userRole)
+                ? 
+                <Grid container spacing={24}>
                       <Grid item xs={4}>
                         <Paper className={classes.paper}>
                         <Button color="primary" onClick={()=>this.identifyUser('User')} className={classes.button}>
@@ -59,6 +60,10 @@ class User extends Component {
                         </Paper>
                       </Grid>
                     </Grid>
+                :
+                <div> 
+                  {userRole &&  <h2> Welcome {userRole}</h2> }
+                </div>
                 }
                   </div>
         )

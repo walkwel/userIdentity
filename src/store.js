@@ -8,8 +8,6 @@ import * as firebase from 'firebase';
 // import reducers
 import reducers from './reducers/';
 
-// import middleware
-import {firebaseLogger} from './helpers/'
 
 // firebase config
 const firebaseConfig = {
@@ -31,8 +29,6 @@ const createStoreWithFirebase = composeWithDevTools(
   reactReduxFirebase(firebase, config),
 )(createStore)
 
-const sagaMiddleware = createSagaMiddleware();
-
-const store = createStore( reducers, composeWithDevTools( reactReduxFirebase(firebase, config),applyMiddleware( firebaseLogger)) )
+const store = createStoreWithFirebase(reducers)
 
 export default store;
